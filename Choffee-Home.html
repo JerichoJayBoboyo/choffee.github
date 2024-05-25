@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choffee | Home</title>
+    <link rel="stylesheet" href="Choffee-Home.css">
+    <link rel="shortcut icon" type="image/x-icon" href="ChoffeeImages/coffee-cup.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Header Homepage -->
+    <header>
+        <div class="announcement-container">
+            <p class="announcement">Choffee is now open! Come and visit us at our physical store from 8:00AM- 10:00PM. Located at Rodriguez, Rizal (Montalban) San Jose. For messages and reservation, kindly message us at our social media pages indicated below <span style="color: red;">&#10084;&#10084;&#10084;</span></p>
+        </div>
+    </header>
+    <!-- Navigations Content -->
+    <nav>
+        <div class="nav-items">
+            <img class="logo" src="ChoffeeImages/choffee-logo.png" alt="choffee-logo">
+            <i class='bx bx-menu' id="menu-icon" onclick="toggleNavLinks()"></i>
+            <div class="navlinks" id="navlinks">
+                <a href="Choffee-Home.html">Home</a>
+                <a href="Choffee-About.html">About</a>
+                <a href="Choffee-Menu.html">Menu</a>
+                <a href="#">Reviews</a>
+                <button href="'#" id="my-cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Section Hompage landing Content -->
+        <section id="homepage-landing">
+            <!--Left Side of Main Content -->
+            <div class="landing-page-left">
+                <img src="ChoffeeImages/japanese-theme-coffee-chop.jpg" alt="japanese-theme-coffee-chop" loading="eager">
+                <p class="landing-page-left-intro">"Inspired by the delicate balance of Japanese craftsmanship and the rich aroma of freshly brewed coffee, we strive to create moments of serenity and satisfaction in every sip."</p>
+            </div>
+            
+            <!--Right Side of Main Content -->
+            <div class="landing-page-right">
+
+                <!--Introduction Right Side-->
+                <div class="intro-container">
+                    <img src="ChoffeeImages/hot-coffee.jpg" alt="hot-coffee">
+                    <p class="intro-paragraph">Taking your coffee<br> while experiencing a <span>"Japanese"</span> <br>theme vibe!</p>
+                </div>
+                
+                <!--Top Selling Right Side-->
+                <div class="top-selling-container">
+                    <div class="top-selling-text-portion"><p class="top-selling-text">Top Selling Products</p>
+                    </div>
+                    <div class="top-selling-products-container">
+                        <div class="top-prod">
+                            <a href="Choffee-Menu.html">
+                                <img src="ChoffeeImages/cappucino-caramel.jfif" alt="cappucino-caramel">
+                                <div class="top-selling-prod-nameandprice">
+                                    <span class="top-selling-prod-name">Cappucino Caramel</span>
+                                    <span class="top-selling-prod-price">$4.75</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="top-prod">
+                           <a href="Choffee-Menu.html">
+                                <img src="ChoffeeImages/americano-flat-white.jpg" alt="americano-flat-white">
+                                <div class="top-selling-prod-nameandprice">
+                                    <span class="top-selling-prod-name">Americano Flat White</span>
+                                    <span class="top-selling-prod-price">$4.25</span>
+                                </div>
+                           </a>
+                        </div>
+                        <div class="top-prod">
+                            <a href="Choffee-Menu.html">
+                                <img src="ChoffeeImages/latte-choco.jpg" alt="latte-choco">
+                                <div class="top-selling-prod-nameandprice">
+                                    <span class="top-selling-prod-name">Latte Choco</span>
+                                    <span class="top-selling-prod-price">$4.50</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Order Now Content -->
+        <section id="order-now-section">
+            <h1 id="order-now">Order <span id="now-text">Now!</span></h1>
+            <form action="" id="order-now-form">
+                <label for="first-name last-name">Name</label>
+                <input type="text" id="first-name" placeholder="First Name">
+                <input type="text" id="last-name" placeholder="Last Name">
+
+                <label for="phone-number">Phone Number</label>
+                <input type="number" id="phone-number" placeholder="Input Phone Number">
+
+                <label for="email-address">Email Address</label>
+                <input type="email" id="email-address" placeholder="Email Address">
+
+                <label for="address">Delivery Address</label>
+                <input type="text" id="address" class="street-number" placeholder="Street no#">
+                <input type="text" id="address" class="city" placeholder="City (Ex: Quezon)">
+                <input type="text" id="address" class="region" placeholder="Region (Ex: CALABARZON)">
+                <input type="number" id="address" class="zip-code" placeholder="Zip code/Postal">
+                <button type="submit" id="submit">Submit</button>
+            </form>
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(149, 106, 71, 1)" offset="0%"></stop><stop stop-color="rgba(218.892, 149.7, 93.38, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,245L120,269.5C240,294,480,343,720,302.2C960,261,1200,131,1440,122.5C1680,114,1920,229,2160,261.3C2400,294,2640,245,2880,228.7C3120,212,3360,229,3600,204.2C3840,180,4080,114,4320,98C4560,82,4800,114,5040,114.3C5280,114,5520,82,5760,73.5C6000,65,6240,82,6480,122.5C6720,163,6960,229,7200,253.2C7440,278,7680,261,7920,245C8160,229,8400,212,8640,212.3C8880,212,9120,229,9360,269.5C9600,310,9840,376,10080,343C10320,310,10560,180,10800,114.3C11040,49,11280,49,11520,65.3C11760,82,12000,114,12240,147C12480,180,12720,212,12960,253.2C13200,294,13440,343,13680,359.3C13920,376,14160,359,14400,294C14640,229,14880,114,15120,106.2C15360,98,15600,196,15840,204.2C16080,212,16320,131,16560,114.3C16800,98,17040,147,17160,171.5L17280,196L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"></path></svg>
+        </section>
+    </main>
+    <!-- Footer Content -->
+    <footer>
+        <div class="footer-contents-container">
+            <!--  Social Media -->
+            <div class="social-media">
+                <h1 class="footer-titles social-media-title">connect with us</h1>
+                <div class="social-media-container">
+                    <a href="#"><i class="fa-brands fa-facebook"></i><span class="logo-title">Choffee24@email.com</span></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i><span class="logo-title">@Choffee24.twitter</span></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i><span class="logo-title">@Choffee24.insta</span></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i><span class="logo-title">Choffee.24</span></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i><span class="logo-title">Choffee24@gmail.com</span></a>
+                </div>
+            </div>
+            <!--  Information -->
+            <div class="information">
+                <h1 class="footer-titles information-title">information</h1>
+                <span class="footer-contents information-content">Escape the hustle and bustle of the city and unwind in the serene ambiance of Choffee. Indulge in a delightful fusion of Japanese aesthetics and aromatic coffee, We offer a harmonious blend of traditional Japanese elements and contemporary design. Step into a realm where every sip is a journey through the tranquil landscapes of Japan, and every corner whispers the essence of Zen.</span>
+            </div>
+            <!--  Mission -->
+            <div class="our-mission">
+                <h1 class="footer-titles our-mission-title">our mission</h1>
+                <span class="footer-contents our-mission-content">Aims to create a peaceful and inviting space where customers can enjoy high-quality coffee in a setting inspired by traditional Japanese teahouses. With minimalist decor and cherry blossom accents, Choffee provides a serene atmosphere for guests to relax and connect. Through its commitment to craftsmanship and hospitality, Choffee strives to be a place where people can unwind, socialize, and experience the timeless charm of Japan.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="Choffee-Home.js"></script>
+</body>
+</html>
